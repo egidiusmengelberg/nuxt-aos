@@ -7,7 +7,7 @@ export default defineNuxtModule<ModuleOptions>({
     name: 'nuxt-aos',
   },
   defaults: {},
-  setup (options, nuxt) {
+  setup () {
     const resolver = createResolver(import.meta.url)
 
     addPlugin(resolver.resolve('./runtime/plugin'))
