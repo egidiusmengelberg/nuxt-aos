@@ -29,7 +29,8 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.6.5",
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "defu": "^6.1.2"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",

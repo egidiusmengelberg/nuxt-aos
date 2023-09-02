@@ -1,10 +1,9 @@
 import { defineNuxtModule, addPlugin, createResolver } from "@nuxt/kit";
+import { defu } from "defu";
 import { name, version } from "../package.json";
 import { AosOptions } from "aos";
 
-export interface ModuleOptions {
-  options?: AosOptions;
-}
+export interface ModuleOptions extends AosOptions {}
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
@@ -12,15 +11,16 @@ export default defineNuxtModule<ModuleOptions>({
     version,
     configKey: "aos",
   },
-  defaults: {
-    options: {},
-  },
+  defaults: {},
   setup(options, nuxt) {
     const resolver = createResolver(import.meta.url);
 
-    // Get runtimeConfig & add aos to it so we can access it in plugin
-    const config = useRuntimeConfig();
-    config.public.aos = options.options;
+    nuxt.options.runtimeConfig.public = defu(
+      nuxt.options.runtimeConfig.public || {},
+      {
+        aos: options,
+      }
+    );
 
     addPlugin(resolver.resolve("./runtime/plugin"));
   },
