@@ -1,15 +1,27 @@
-import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
+import { defineNuxtModule, addPlugin, createResolver } from "@nuxt/kit";
+import { defu } from "defu";
+import { name, version } from "../package.json";
+import { AosOptions } from "aos";
 
-export interface ModuleOptions {}
+export interface ModuleOptions extends AosOptions {}
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'nuxt-aos',
+    name,
+    version,
+    configKey: "aos",
   },
   defaults: {},
-  setup () {
-    const resolver = createResolver(import.meta.url)
+  setup(options, nuxt) {
+    const resolver = createResolver(import.meta.url);
 
-    addPlugin(resolver.resolve('./runtime/plugin'))
-  }
-})
+    nuxt.options.runtimeConfig.public = defu(
+      nuxt.options.runtimeConfig.public || {},
+      {
+        aos: options,
+      }
+    );
+
+    addPlugin(resolver.resolve("./runtime/plugin"));
+  },
+});

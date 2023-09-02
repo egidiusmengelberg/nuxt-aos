@@ -1,10 +1,11 @@
-import { defineNuxtPlugin } from '#app'
+import { defineNuxtPlugin, useRuntimeConfig } from "#app";
 
-import AOS from "aos"
-import "aos/dist/aos.css"
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default defineNuxtPlugin((nuxtApp) => {
+  const config = useRuntimeConfig();
   if (typeof window !== "undefined") {
-    nuxtApp.AOS = AOS.init()
+    nuxtApp.AOS = AOS.init(config.public?.aos || {});
   }
-})
+});
