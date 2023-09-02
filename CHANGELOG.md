@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.1.0
+
+[compare changes](https://github.com/egidiusmengelberg/nuxt-aos/compare/v1.0.4...v1.1.0)
+
+### 🚀 Enhancements
+
+- **module:** Pass options to init method of aos ([c3290d7](https://github.com/egidiusmengelberg/nuxt-aos/commit/c3290d7))
+
+### 🏡 Chore
+
+- **module:** Use correct method of passing options to plugin ([224e46c](https://github.com/egidiusmengelberg/nuxt-aos/commit/224e46c))
+
+### ❤️  Contributors
+
+- BayBreezy <behon.baker@yahoo.com>
+
 ## v1.0.4
 
 
