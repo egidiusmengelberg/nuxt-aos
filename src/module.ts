@@ -10,6 +10,9 @@ export default defineNuxtModule<ModuleOptions>({
     name,
     version,
     configKey: "aos",
+    compatibility: {
+      nuxt: '^3.0.0'
+    }
   },
   defaults: {},
   setup(options, nuxt) {
