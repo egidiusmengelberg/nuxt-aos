@@ -1,7 +1,7 @@
 import { defineNuxtModule, addPlugin, createResolver } from "@nuxt/kit";
 import { defu } from "defu";
 import { name, version } from "../package.json";
-import { AosOptions } from "aos";
+import type { AosOptions } from "aos";
 
 export interface ModuleOptions extends AosOptions {}
 
