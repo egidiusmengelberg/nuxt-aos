@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v1.2.2
+
+[compare changes](https://github.com/egidiusmengelberg/nuxt-aos/compare/v1.2.1...v1.2.2)
+
+### 🏡 Chore
+
+- Update deps ([1abb90f](https://github.com/egidiusmengelberg/nuxt-aos/commit/1abb90f))
+- Transpile aos deps & include it in vite optimize array ([254db5b](https://github.com/egidiusmengelberg/nuxt-aos/commit/254db5b))
+- Provide aos methods from plugin ([fde232d](https://github.com/egidiusmengelberg/nuxt-aos/commit/fde232d))
+
+### 🎨 Styles
+
+- **plugin:** Remove unused var ([7f2fae8](https://github.com/egidiusmengelberg/nuxt-aos/commit/7f2fae8))
+
+### ❤️ Contributors
+
+- BayBreezy <behon.baker@yahoo.com>
+
 ## v1.2.1
 
 [compare changes](https://github.com/egidiusmengelberg/nuxt-aos/compare/v1.1.7...v1.2.1)
