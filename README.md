@@ -49,6 +49,8 @@ For example:
 <div data-aos="fade-up"></div>
 ```
 
+To see all the different animations, visit [https://michalsnik.github.io/aos/](https://michalsnik.github.io/aos/)
+
 ## Development
 
 ```bash
