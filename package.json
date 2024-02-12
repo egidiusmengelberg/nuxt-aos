@@ -31,6 +31,7 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
+    "@nuxt/devtools-kit": "^1.0.8",
     "@nuxt/kit": "^3.10.1",
     "aos": "^3.0.0-beta.6",
     "defu": "^6.1.4"
