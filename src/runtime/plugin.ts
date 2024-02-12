@@ -3,9 +3,11 @@ import { defineNuxtPlugin, useRuntimeConfig } from "#app";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-export default defineNuxtPlugin(() => {
-  const config = useRuntimeConfig();
-  AOS.init(config.public.aos || {});
+export default defineNuxtPlugin((nuxtApp) => {
+  nuxtApp.hook('app:mounted', () => {
+    const config = useRuntimeConfig();
+    AOS.init(config.public.aos || {});
+  });
 
   // refresh function
   const refreshAos = () => AOS.refresh();

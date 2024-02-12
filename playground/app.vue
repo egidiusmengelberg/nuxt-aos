@@ -43,14 +43,14 @@ body {
 
 main {
   max-width: 80vw;
-  margin: 2em auto;
+  margin: 4rem auto;
   display: grid;
   grid-template-columns: auto auto;
   gap: 1em;
 }
 
 article {
-  aspect-ratio: 1/1;
+  height: 60vh;
   background: #ED6A5E;
   display: flex;
   justify-content: center;
