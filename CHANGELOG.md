@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.2.4
+
+[compare changes](https://github.com/egidiusmengelberg/nuxt-aos/compare/v1.2.3...v1.2.4)
+
+### 🏡 Chore
+
+- **release:** V1.2.3 ([0b309c5](https://github.com/egidiusmengelberg/nuxt-aos/commit/0b309c5))
+
+### ❤️ Contributors
+
+- Egidius Mengelberg <mengelberg@mengelberg.eu>
+
 ## v1.2.3
 
 [compare changes](https://github.com/egidiusmengelberg/nuxt-aos/compare/v1.2.2...v1.2.3)

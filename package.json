@@ -1,6 +1,6 @@
 {
   "name": "nuxt-aos",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "A Nuxt module that adds Animate On Scroll",
   "repository": {
     "type": "git",
