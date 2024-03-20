@@ -108,6 +108,20 @@ export default defineNuxtConfig({
 ```
 
 
+## API
+
+You can also use AOS API, for now there are tow methods available:
+
+```js
+const { $refreshAos, $refreshHardAos } = useNuxtApp()
+
+$refreshAos()
+
+$refreshHardAos()
+```
+
+For details, refer to [AOS API](https://github.com/michalsnik/aos?tab=readme-ov-file#api).
+
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/nuxt-aos/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
 [npm-version-href]: https://npmjs.com/package/nuxt-aos
