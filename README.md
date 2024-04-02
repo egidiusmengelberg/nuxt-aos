@@ -21,13 +21,6 @@ A Nuxt module for adding animate on scroll to your application.
 1. Add `nuxt-aos` dependency to your project
 
 ```bash
-# Using pnpm
-npx nuxi@latest module add aos
-
-# Using yarn
-npx nuxi@latest module add aos
-
-# Using npm
 npx nuxi@latest module add aos
 ```
 
