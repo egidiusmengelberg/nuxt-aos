@@ -9,9 +9,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     AOS.init(config.public.aos || {});
   });
 
-  // refresh function
   const refreshAos = () => AOS.refresh();
-  // refreshHard function
   const refreshHardAos = () => AOS.refreshHard();
 
   return {
