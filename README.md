@@ -8,8 +8,7 @@
 A Nuxt module for adding animate on scroll to your application.
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
-<!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/nuxt-aos?file=playground%2Fapp.vue) -->
-<!-- - [📖 &nbsp;Documentation](https://example.com) -->
+- [📖 &nbsp;Documentation](https://github.com/egidiusmengelberg/nuxt-aos#readme)
 
 ## Features
 
@@ -24,17 +23,11 @@ A Nuxt module for adding animate on scroll to your application.
 npx nuxi@latest module add aos
 ```
 
-2. Add `nuxt-aos` to the `modules` section of `nuxt.config.ts`
+1. (optional) Add aos config to `nuxt.config.js`, scroll down for more info.
 
-```js
-export default defineNuxtConfig({
-  modules: [
-    'nuxt-aos'
-  ]
-})
 ```
 
-That's it! You can now use Aos in your Nuxt app on every page ✨
+That's it! You can now use Aos in your Nuxt app on every page 🚀
 
 For example:
 
@@ -42,32 +35,32 @@ For example:
 <div data-aos="fade-up"></div>
 ```
 
-To see all the different animations, visit [https://michalsnik.github.io/aos/](https://michalsnik.github.io/aos/)
+A list of available animations can be found at [https://michalsnik.github.io/aos/](https://michalsnik.github.io/aos/)
 
 ## Development
 
 ```bash
 # Install dependencies
-npm install
+yarn install
 
 # Generate type stubs
-npm run dev:prepare
+yarn run dev:prepare
 
 # Develop with the playground
-npm run dev
+yarn run dev
 
 # Build the playground
-npm run dev:build
+yarn run dev:build
 
 # Run ESLint
-npm run lint
+yarn run lint
 
 # Run Vitest
-npm run test
-npm run test:watch
+yarn run test
+yarn run test:watch
 
 # Release new version
-npm run release
+yarn run release
 ```
 
 ## Configuration
@@ -86,7 +79,6 @@ export default defineNuxtConfig({
     disableMutationObserver: false, // disables automatic mutations' detections (advanced)
     debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
     throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-    
 
     // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
     offset: 120, // offset (in px) from the original trigger point
@@ -96,14 +88,14 @@ export default defineNuxtConfig({
     once: false, // whether animation should happen only once - while scrolling down
     mirror: false, // whether elements should animate out while scrolling past them
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-    }
+  }
 })
 ```
 
 
 ## API
 
-You can also use AOS API, for now there are tow methods available:
+You can also use AOS API, for now there are two methods available:
 
 ```js
 const { $refreshAos, $refreshHardAos } = useNuxtApp()
