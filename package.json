@@ -33,7 +33,8 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.12.3",
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "defu": "^6.1.4"
   },
   "devDependencies": {
     "@nuxt/devtools": "^1.3.9",
