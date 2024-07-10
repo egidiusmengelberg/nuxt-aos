@@ -11,7 +11,7 @@ export default defineNuxtModule<ModuleOptions>({
     version,
     configKey: 'aos',
     compatibility: {
-      nuxt: '^3.0.0',
+      nuxt: ">=3.0.0",
     },
   },
   defaults: {},
