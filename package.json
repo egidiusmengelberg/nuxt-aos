@@ -41,6 +41,7 @@
     "@nuxt/module-builder": "^0.8.1",
     "@nuxt/schema": "^3.12.3",
     "@nuxt/test-utils": "^3.13.1",
+    "@types/aos": "^3.0.7",
     "@types/node": "^20.14.9",
     "changelogen": "^0.5.5",
     "eslint": "^9.6.0",
