@@ -35,7 +35,6 @@
 </template>
 
 <style>
-
 body {
   margin: 0;
   background: #377771;
@@ -61,5 +60,4 @@ p {
   color: white;
   font-size: 1.5em;
 }
-
 </style>
