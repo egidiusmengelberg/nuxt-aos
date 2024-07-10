@@ -1,4 +1,4 @@
-import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
+import { defineNuxtModule, addPlugin, createResolver, useLogger } from '@nuxt/kit'
 import { addCustomTab } from '@nuxt/devtools-kit'
 import type { AosOptions } from 'aos'
 import { name, version } from '../package.json'
@@ -23,7 +23,10 @@ export default defineNuxtModule<ModuleOptions>({
     },
   },
   setup(options, nuxt) {
+    const logger = useLogger('nuxt-aos')
     const resolver = createResolver(import.meta.url)
+
+    logger.info('🚀 Setting up nuxt-aos')
 
     nuxt.options.runtimeConfig.public.aos = options || {}
 
