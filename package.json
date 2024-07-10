@@ -1,8 +1,11 @@
 {
-  "name": "my-module",
-  "version": "1.0.0",
-  "description": "My new Nuxt module",
-  "repository": "your-org/my-module",
+  "name": "nuxt-aos",
+  "version": "1.2.4",
+  "description": "A Nuxt module that adds Animate On Scroll",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egidiusmengelberg/nuxt-aos.git"
+  },
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -46,5 +49,10 @@
     "vitest": "^1.6.0",
     "vue-tsc": "^2.0.24"
   },
+  "author": "Egidius Mengelberg <hello@egidius.io> (https://egidius.io)",
+  "bugs": {
+    "url": "https://github.com/egidiusmengelberg/nuxt-aos/issues"
+  },
+  "homepage": "https://github.com/egidiusmengelberg/nuxt-aos#readme",
   "packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903"
 }
