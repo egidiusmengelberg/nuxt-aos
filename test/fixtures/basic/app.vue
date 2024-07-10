@@ -1,5 +1,5 @@
 <template>
-  <div>not needed</div>
+  <div>basic</div>
 </template>
 
 <script setup>

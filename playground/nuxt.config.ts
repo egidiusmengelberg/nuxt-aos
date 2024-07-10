@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  modules: ["../src/module"],
-  aos: {},
+  modules: ['../src/module'],
+  myModule: {},
   devtools: { enabled: true },
-});
+})
