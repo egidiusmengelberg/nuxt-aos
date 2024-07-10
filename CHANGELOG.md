@@ -1,6 +1,28 @@
 # Changelog
 
 
+## v1.2.5
+
+[compare changes](https://github.com/egidiusmengelberg/nuxt-aos/compare/v1.2.4...v1.2.5)
+
+### 📖 Documentation
+
+- Add desc for AOS API #23 ([#23](https://github.com/egidiusmengelberg/nuxt-aos/issues/23))
+- Use new `nuxi module add` command in installation ([d5f4e82](https://github.com/egidiusmengelberg/nuxt-aos/commit/d5f4e82))
+- Update readme ([f5c8e14](https://github.com/egidiusmengelberg/nuxt-aos/commit/f5c8e14))
+
+### 🏡 Chore
+
+- **release:** V1.2.4 ([0652f94](https://github.com/egidiusmengelberg/nuxt-aos/commit/0652f94))
+- Remove dupe ([a2d3691](https://github.com/egidiusmengelberg/nuxt-aos/commit/a2d3691))
+- Indicate compatibility with new v4 major` ([ffcb351](https://github.com/egidiusmengelberg/nuxt-aos/commit/ffcb351))
+
+### ❤️ Contributors
+
+- Daniel Roe ([@danielroe](http://github.com/danielroe))
+- Egidius Mengelberg <mengelberg@mengelberg.eu>
+- JokerWon <1595672103@qq.com>
+
 ## v1.2.4
 
 [compare changes](https://github.com/egidiusmengelberg/nuxt-aos/compare/v1.2.3...v1.2.4)
