@@ -25,8 +25,6 @@ npx nuxi@latest module add aos
 
 1. (optional) Add aos config to `nuxt.config.js`, scroll down for more info.
 
-```
-
 That's it! You can now use Aos in your Nuxt app on every page 🚀
 
 For example:
