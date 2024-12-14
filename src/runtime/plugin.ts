@@ -1,4 +1,4 @@
-import AOS from 'aos'
+import AOS, { type AosOptions } from 'aos'
 import { defineNuxtPlugin, useRuntimeConfig } from '#app'
 
 import 'aos/dist/aos.css'
@@ -6,7 +6,17 @@ import 'aos/dist/aos.css'
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.hook('app:mounted', () => {
     const config = useRuntimeConfig()
-    AOS.init(config.public.aos || {})
+    const aosConfig: AosOptions = {
+      ...config.public.aos,
+      duration: config.public.aos?.duration || 600,
+      delay: config.public.aos?.delay || 0,
+      offset: config.public.aos?.offset || 120,
+      easing: config.public.aos?.easing || "ease",
+      once: config.public.aos?.once || false, 
+      mirror: config.public.aos?.mirror || false
+    }
+
+    AOS.init(aosConfig)
   })
 
   const refreshAos = () => AOS.refresh()
