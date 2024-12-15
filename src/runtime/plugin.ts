@@ -4,7 +4,7 @@ import { defineNuxtPlugin, useRuntimeConfig } from '#app'
 import 'aos/dist/aos.css'
 
 export default defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.hook('app:mounted', () => {
+  nuxtApp.hook('app:suspense:resolve', () => {
     const config = useRuntimeConfig()
     const aosConfig: AosOptions = {
       ...config.public.aos,
