@@ -20,6 +20,7 @@ export default defineNuxtModule<ModuleOptions>({
       config.optimizeDeps ||= {}
       config.optimizeDeps.include ||= []
       config.optimizeDeps.include.push('aos')
+      config.optimizeDeps.include.push('nuxt-aos > aos')
     },
   },
   setup(options, nuxt) {
