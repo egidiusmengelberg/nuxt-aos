@@ -51,7 +51,7 @@
     "vitest": "^1.6.0",
     "vue-tsc": "^2.0.24"
   },
-  "author": "Egidius Mengelberg <hello@egidius.io> (https://egidius.io)",
+  "author": "Egidius Mengelberg <egidius@egidius.nl> (https://egidius.nl)",
   "bugs": {
     "url": "https://github.com/egidiusmengelberg/nuxt-aos/issues"
   },
