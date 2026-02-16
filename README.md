@@ -33,6 +33,18 @@ For example:
 <div data-aos="fade-up"></div>
 ```
 
+## Manual install
+
+1. Install `nuxt-aos` dependency to your project
+
+```bash
+pnpm i nuxt-aos
+```
+
+2. Add `nuxt-aos` to modules in `nuxt.config.js`.
+
+## Available animations
+
 A list of available animations can be found at [https://michalsnik.github.io/aos/](https://michalsnik.github.io/aos/)
 
 ## Development
