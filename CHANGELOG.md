@@ -1,6 +1,20 @@
 # Changelog
 
 
+## v1.2.6
+
+[compare changes](https://github.com/egidiusmengelberg/nuxt-aos/compare/v1.2.5...v1.2.6)
+
+### 🩹 Fixes
+
+- Dist aos cjs issue ([ba0716e](https://github.com/egidiusmengelberg/nuxt-aos/commit/ba0716e))
+- **dx:** Tsconfig ([60ef89d](https://github.com/egidiusmengelberg/nuxt-aos/commit/60ef89d))
+
+### ❤️ Contributors
+
+- Egidius Mengelberg ([@egidiusmengelberg](http://github.com/egidiusmengelberg))
+- Ahmed Rangel ([@ahmedrangel](http://github.com/ahmedrangel))
+
 ## v1.2.5
 
 [compare changes](https://github.com/egidiusmengelberg/nuxt-aos/compare/v1.2.4...v1.2.5)
